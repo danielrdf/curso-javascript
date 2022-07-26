@@ -19,12 +19,16 @@
 </head>
 <body>
     <h1>Eventos DOM</h1>
-    <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="sair()"> <!-- digitando div#area e apertando tab será criada a tag automaticamente (também funciona para classes e tags personalizadas) -->
+    <div id="area"> <!-- digitando div#area e apertando tab será criada a tag automaticamente (também funciona para classes e tags personalizadas) -->
         Interaja...
     </div>
 
-    <script>
+    <script> // caso tenha algo errado no código de JavaScript > na página, clicar com botão direito > Inspect > Open Console to view 1 error (canto superior direito) > na parte de baixo será indicada a linha onde está o erro
         var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseover', entrar)
+        a.addEventListener('mouseout', sair)
+
         function clicar() {
             a.innerText = 'Clicou!'
             a.style.background = '#355764'
