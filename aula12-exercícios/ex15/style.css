@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background: #525E75;
+    background: #FADF67;
     font: normal 1.3em Arial;
 }
 header {
@@ -15,6 +15,10 @@ main {
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+#img {
+    box-sizing: border-box;
+    margin: auto;
 }
 footer {
     color: white;
