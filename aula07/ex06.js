@@ -6,7 +6,6 @@ console.log(5 / 2)
 console.log(5 % 2)
 console.log(5 ** 2)
 
-// ordem de precedência: () -> ** -> (*, /, %) -> (+, -)
 console.log(5 + 3 / 2)
 console.log((5 + 3) / 2)
 
