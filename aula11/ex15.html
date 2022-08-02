@@ -10,21 +10,8 @@
     <h1>Nacionalidade</h1>
     Onde nasceu: <input type="text" name="txtpais" id="txtpais">
     <input type="button" value="Verificar" onclick="verNac()">
-    <div id="nac"></div>
+    <div id="res"></div>
 
-    <script>
-        function verNac() {
-            var origem = window.document.getElementById('txtpais')
-            var nac = window.document.getElementById('nac')
-            var país = String(origem.value)
-            nac.innerHTML = `<p>Você nasceu em ${país}.</p>`
-
-            if (país == 'Brasil') {
-                nac.innerHTML += `<p>Você é brasileiro.</p>`
-            } else {
-                nac.innerHTML += `<p>Você é estrangeiro.</p>`
-            }
-        }
-    </script>
+    <script src="ex15.js"></script>
 </body>
 </html>
